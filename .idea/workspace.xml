@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2f8e596-0cd1-4549-96f1-31b961413882" name="Changes" comment="Started project" />
+    <list default="true" id="b2f8e596-0cd1-4549-96f1-31b961413882" name="Changes" comment="Started project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +54,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -61,9 +65,9 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" show_stripe_button="false" />
       <window_info id="Learn" show_stripe_button="false" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8776908" weight="0.32984102" />
-      <window_info active="true" id="Commit" order="1" sideWeight="0.7818004" visible="true" weight="0.32984102" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.21819961" side_tool="true" visible="true" weight="0.32984102" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8776908" visible="true" weight="0.32984102" />
+      <window_info id="Commit" order="1" sideWeight="0.7818004" weight="0.32984102" />
+      <window_info id="Structure" order="2" sideWeight="0.21819961" side_tool="true" weight="0.32984102" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
       <window_info anchor="bottom" id="Profiler" show_stripe_button="false" />
@@ -73,7 +77,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.33180895" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.21087399" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.41006097" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.24949187" />
       <window_info anchor="bottom" id="Build" order="4" weight="0.32977644" />
       <window_info anchor="bottom" id="Services" order="5" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
@@ -119,6 +123,7 @@
       <updated>1722505567219</updated>
       <workItem from="1722505568441" duration="3529000" />
       <workItem from="1722596810703" duration="5407000" />
+      <workItem from="1722602628888" duration="1321000" />
     </task>
     <task id="LOCAL-00001" summary="Started project">
       <option name="closed" value="true" />
