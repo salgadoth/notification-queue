@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b2f8e596-0cd1-4549-96f1-31b961413882" name="Changes" comment="Started project" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2k3HuclBki4SfYdOTr9PfiExYi3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/salgadoth/coding/notification-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" show_stripe_button="false" />
+      <window_info id="Learn" show_stripe_button="false" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8776908" weight="0.32984102" />
+      <window_info active="true" id="Commit" order="1" sideWeight="0.7818004" visible="true" weight="0.32984102" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.21819961" side_tool="true" visible="true" weight="0.32984102" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.33180895" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.21087399" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.41006097" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.32977644" />
+      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Beans" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.32984102" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32984102" />
+    </layout>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="notification-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="notification-service" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.159" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2f8e596-0cd1-4549-96f1-31b961413882" name="Changes" comment="" />
+      <created>1722505567219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722505567219</updated>
+      <workItem from="1722505568441" duration="3529000" />
+      <workItem from="1722596810703" duration="5407000" />
+    </task>
+    <task id="LOCAL-00001" summary="Started project">
+      <option name="closed" value="true" />
+      <created>1722598530382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722598530383</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Started project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started project" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
