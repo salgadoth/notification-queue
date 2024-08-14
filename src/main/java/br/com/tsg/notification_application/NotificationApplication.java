@@ -1,11 +1,11 @@
-package br.com.tsg.notification_service;
+package br.com.tsg.notification_application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NotificationService {
+public class NotificationApplication {
     public static void main(String[] args) {
-        SpringApplication.run(NotificationService.class, args);
+        SpringApplication.run(NotificationApplication.class, args);
     }
 }
