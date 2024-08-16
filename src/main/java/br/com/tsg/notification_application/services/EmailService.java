@@ -18,6 +18,8 @@ import jakarta.mail.Session;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
 import lombok.extern.log4j.Log4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.apache.commons.codec.binary.Base64;
@@ -27,7 +29,6 @@ import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
-import java.util.logging.Logger;
 
 @Service
 public class EmailService {
@@ -38,11 +39,13 @@ public class EmailService {
     @Value("${google.gmail.sender-email}")
     private String SENDER_EMAIL_ADDRESS;
 
+    private static final Logger logger = LoggerFactory.getLogger(EmailService.class);
     private static final String APPLICATION_NAME = "mp-email-sender";
     private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
     private static final List<String> SCOPES = Collections.singletonList(GmailScopes.MAIL_GOOGLE_COM);
 
     public Credential getCredentials() throws IOException, GeneralSecurityException {
+        logger.info("Obtaining Google Credentials for user: {}", SENDER_EMAIL_ADDRESS);
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new FileReader(CREDENTIALS_FILE_PATH));
 
         GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
@@ -54,10 +57,12 @@ public class EmailService {
         LocalServerReceiver receiver = new LocalServerReceiver.Builder()
                 .setPort(8888).build();
 
+        logger.info("Credentials obtained successfully...");
         return new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
     }
 
     private Gmail getGmailService() throws GeneralSecurityException, IOException {
+        logger.info("Building Gmail...");
         Credential credential = getCredentials();
         return new Gmail.Builder(GoogleNetHttpTransport.newTrustedTransport(), JSON_FACTORY, credential)
                 .setApplicationName(APPLICATION_NAME)
@@ -65,6 +70,8 @@ public class EmailService {
     }
 
     private MimeMessage createEmail(String to, String from, String subject, String bodyText) throws MessagingException {
+        logger.info("Building email to be sent...");
+
         Properties props = new Properties();
         Session session = Session.getDefaultInstance(props, null);
 
@@ -77,11 +84,13 @@ public class EmailService {
     }
 
     public void sendEmail(String to, String subject, String bodyText) throws MessagingException, IOException, GeneralSecurityException {
+        logger.info("Starting to send email to: {}, from: {}", to, SENDER_EMAIL_ADDRESS);
         MimeMessage email = createEmail(to, SENDER_EMAIL_ADDRESS, subject, bodyText);
         sendMessage(getGmailService(), SENDER_EMAIL_ADDRESS, email);
     }
 
     private void sendMessage(Gmail gmailService, String senderEmailAddress, MimeMessage email) throws MessagingException, IOException {
+        logger.info("Sending email...");
         ByteArrayOutputStream buffer = new ByteArrayOutputStream();
         email.writeTo(buffer);
         byte[] rawMessageBytes = buffer.toByteArray();
@@ -90,5 +99,6 @@ public class EmailService {
         message.setRaw(encodedEmail);
 
         gmailService.users().messages().send(senderEmailAddress, message).execute();
+        logger.info("Email sent successfully");
     }
 }
