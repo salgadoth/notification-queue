@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: localhost:29092
+    bootstrap-servers: localhost:29092 # Port that kafka server is listening for new connections
     consumer:
       group-id: notification-group
       auto-offset-reset: earliest
@@ -11,9 +11,9 @@ spring:
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
   data:
     mongodb:
-      uri: mongodb+srv://db_consumer:BL1y5imrAV0HHHSW@cluster0.y5d0bmy.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0
+      uri: mongodb+srv://<username>:<password>@cluster0.y5d0bmy.mongodb.net/<dbName>?retryWrites=true&w=majority&appName=Cluster0
 
 google:
   gmail:
-    credentials-file-path: "src/main/resources/client_secret.json" # Path to credentials file
-    sender-email: "tsg.lab00@gmail.com" # The current sender email address
+    credentials-file-path: "path/to/google_cloud/credentials.json" # Path to GoogleCloud credentials file
+    sender-email: "example@gmail.com" # The current sender email address
