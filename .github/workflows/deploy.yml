@@ -17,7 +17,7 @@ jobs:
 
       - name: Move JAR to deployments folder
         run: |
-          mv /etc/actions-runner/runner-notification-app/_work/notification-service/notification-service/ ~/deployments/notification-application/
+          rsync -avz --exclude=".git" /etc/actions-runner/runner-notification-app/_work/notification-service/notification-service/ /home/salgadoth/deployments/notification-application/
 
       - name: Deploy application
         run: |
