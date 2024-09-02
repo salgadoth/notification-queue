@@ -19,6 +19,12 @@ jobs:
         run: |
           rsync -avz --exclude=".git" /etc/actions-runner/runner-notification-app/_work/notification-service/notification-service/ /home/salgadoth/deployments/notification-application/
 
+      - name: Set environment variables
+        run: |
+          echo "MONGODB_USERNAME=${{ secrets.MONGODB_USERNAME }}" >> $GITHUB_ENV
+          echo "MONGODB_PASSWORD=${{ secrets.MONGODB_PASSWORD }}" >> $GITHUB_ENV
+          echo "GC_EMAIL_SENDER=${{ secrets. GC_EMAIL_SENDER }}" >> $GITHUB_ENV
+
       - name: Deploy application
         run: |
           cd ~/deployments/notification-application/
