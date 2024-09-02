@@ -15,8 +15,13 @@ jobs:
       - name: Build with maven
         run: mvn clean package -DskipTests
 
+      - name: Move JAR to deployments folder
+        run: |
+          mv ./notification-application/notification-application/ ~/deployments/notification-application/
+
       - name: Deploy application
         run: |
+          cd ~/deployments/notification-application/
           pm2 stop notification-application || true
           pm2 delete notification-application || true
           pm2 start ecosystem.config.js
