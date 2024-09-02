@@ -17,7 +17,7 @@ jobs:
 
       - name: Move JAR to deployments folder
         run: |
-          mv ./notification-application/notification-application/ ~/deployments/notification-application/
+          mv ./notification-service/notification-service/ ~/deployments/notification-application/
 
       - name: Deploy application
         run: |
