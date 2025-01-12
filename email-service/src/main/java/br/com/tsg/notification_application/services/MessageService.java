@@ -42,6 +42,7 @@ public class MessageService {
             logger.info("Message sent, updating its status and persisting...");
             messageDocument.setNotified(true);
             messageRepository.save(messageDocument);
+            logger.info("Message status persisted.");
         } else {
             logger.error("Message with id: {} not found.", message.getId());
         }

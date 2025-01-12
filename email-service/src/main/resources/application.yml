@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://db_consumer:BL1y5imrAV0HHHSW@cluster0.y5d0bmy.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0
+
+google:
+  gmail:
+    credentials-file-path: "/home/salgadoth/coding/notification-service/email-service/src/main/resources/client_secret.json" # Path to credentials file
+    sender-email: "tsg.lab00@gmail.com" # The current sender email address
